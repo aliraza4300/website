@@ -13,4 +13,51 @@
      .dropdownLinksWrapper{
         @apply ps-2.5 py-5
      }
+     .buttonprimary{
+        @apply py-5 px-9  bg-green rounded-40 hover:bg-black hover:text-white
+     }
+     .buttonprimary-small{
+        @apply py-2 px-5  bg-green rounded-40 hover:bg-black hover:text-white
+     }
+
+     .carousel-container {
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; 
+      }
+
+      .carousel-container::-webkit-scrollbar {
+        display: none; 
+      }
+
+      .carousel-item {
+        scroll-snap-align: start;
+      }
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+    .marquee {
+        display: flex;
+        animation: marquee 10s linear infinite;
+    }
+    .marquee:hover{
+        animation-play-state: paused;
+    }
+
+    .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .text-stroke {
+        -webkit-text-stroke: 1px black; 
+        color: transparent; 
+        transition: color 0.5s ease;
+    }
+    .text-stroke:hover{
+        color: black;
+    }
 }

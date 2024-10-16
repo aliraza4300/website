@@ -23,10 +23,11 @@ module.exports = {
       },
       colors:{
         green:"#9CEE69",
+        'custom-gray': '#D9D9D9',
+        'custom-light-gray': '#f1f1f1',
+        'black-rgba-10': 'rgba(0, 0, 0, 0.1)',
       },
-      width: {
-        '175': '175px', 
-      },
+     
       transitionDelay: {
         '0': '0ms',    
         '100': '100ms',
@@ -39,16 +40,26 @@ module.exports = {
       screens: {
         'custom': {'max': '1399px'}, 
         'custom-990': {'max': '990px'}, 
+        'custom-620': {'max': '620px'}, 
       },
       backgroundImage: {
         'custom-map': "url('./images/bg-map.png')",
+        'custom-playvideo': "url('./images/PlayVideo.jpg')",
       },
       height: {
         '80vh': '80vh',
+        '170': '170px', 
+        '100px':'100px',
+        '52':'100px',
+
       },
       fontSize: {
         '135px': '135px',
         '26px': '26px',
+        '80': '80px',
+        '55': '55px',
+        '150': '150px', 
+        '46': '46px', 
       },
       zIndex: {
         '1': '1',
@@ -56,19 +67,41 @@ module.exports = {
       },
       width: {
         '1300': '1300px', 
+        '175': '175px', 
+        '170': '170px',
+        '9/10': '90%',
+        '100px': '100px',
+        
+      },
+      maxWidth: {
+        '1300': '1300px', 
       },
       padding: {
         '480': '480px', 
+        '230': '230px', 
       },
       margin: {
         'negative-16': '-16px', 
         'negative-5': '-5%', 
+        '5p': '5%',  
+        '30p': '30%',
+        '18p': '18%',
       },
       lineHeight: {
         '1.3': '1.3em', 
       },
       borderRadius: {
         '40': '40px',
+        '25': '25px',
+      },
+      inset: {
+        'negative-40': '-40px', 
+      },
+      opacity: {
+        '7': '0.07', 
+      },
+      textStroke: {
+        '1': '1px black', 
       },
     },
   },
