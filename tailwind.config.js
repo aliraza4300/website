@@ -20,11 +20,14 @@ module.exports = {
       fontFamily: {
         'dm-sans': ["DM Sans", 'sans-serif'],
         "sora": ['Sora', 'sans-serif'],
+        "poppins": ['Poppins', 'sans-serif'],
       },
       colors:{
         green:"#9CEE69",
         'custom-gray': '#D9D9D9',
+        'custom-gray-75': '#757575',
         'custom-light-gray': '#f1f1f1',
+        'custom-light-gray-border': '#FFFFFF30',
         'black-rgba-10': 'rgba(0, 0, 0, 0.1)',
       },
      
