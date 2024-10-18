@@ -67,9 +67,11 @@
       .swiper {
         width: 85%;
         height: 100%;
+        padding: 70px 0px !important;
       }
       @media only screen and (max-width: 700px) {
         .swiper {
+          
           width: 100%;
         }
       }
@@ -125,4 +127,5 @@
     .transition-transform {
         transition: transform 0.3s ease;
     }
+    
 }
