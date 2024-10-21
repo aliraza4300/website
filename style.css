@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+  --swiper-theme-color: #9CEE69 !important;
+}
 
 @layer base {
     .navlinks{
@@ -127,5 +129,16 @@
     .transition-transform {
         transition: transform 0.3s ease;
     }
-    
+    .swiper-pagination {
+      display: flex !important;
+      flex-direction: column !important; 
+      align-items: center;
+      justify-content: center;
+      position: absolute !important;
+      right: 10px !important; 
+      left: 90% !important; 
+      top: 50% !important; 
+      transform: translateY(-50%) !important;
+      width: auto !important;
+    }
 }

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Website</title>
+</head>
+<body class="font-dm-sans ">
+    <header class="flex items-center bg-white gap-4 px-10 custom-620:px-5 fixed top-0 left-0 w-full transform transition-transform duration-300 ease z-[1000]"> 
+    <div class="py-7 min-w-56">
+        <img class="" src="https://themes.potenzaglobalsolutions.com/mavix/wp-content/themes/mavix/inc/theme-data/logo.svg" alt="">
+    </div>
+    <div class="flex flex-wrap gap-9 custom-990:hidden">
+        <div class="relative group">
+            <button id="dropdownButton" class="navlinks">
+              Home
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          
+    
+            <div id="dropdownMenu" class="absolute hidden group-hover:block origin-top-right left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 animate-fadeInUp">
+              <div class="dropdownLinksWrapper">
+                <a href="#" class="dropdownLinks">Home1</a>
+                <a href="#" class="dropdownLinks">Home2</a>
+                          
+              </div>
+            </div>
+          </div>
+        <div class="relative group">
+            <button id="dropdownButton" class="navlinks">
+              Pages
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          
+    
+            <div id="dropdownMenu" class="absolute hidden group-hover:block origin-top-right left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 animate-fadeInUp">
+              <div class="dropdownLinksWrapper">
+                <a href="#" class="dropdownLinks">About Us</a>
+                <a href="#" class="dropdownLinks">Our History</a>
+                          
+              </div>
+            </div>
+          </div>
+        <div class="relative group">
+            <button id="dropdownButton" class="navlinks">
+              Services
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          
+    
+            <div id="dropdownMenu" class="absolute hidden group-hover:block origin-top-right left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 animate-fadeInUp">
+              <div class="dropdownLinksWrapper">
+                <a href="#" class="dropdownLinks">About Us</a>
+                <a href="#" class="dropdownLinks">Our History</a>
+                          
+              </div>
+            </div>
+          </div>
+        <div class="relative group">
+            <button id="dropdownButton" class="navlinks">
+              Portfolio
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          
+    
+            <div id="dropdownMenu" class="absolute hidden group-hover:block origin-top-right left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 animate-fadeInUp">
+              <div class="dropdownLinksWrapper">
+                <a href="#" class="dropdownLinks">About Us</a>
+                <a href="#" class="dropdownLinks">Our History</a>
+                          
+              </div>
+            </div>
+          </div>
+        <div class="relative group">
+            <button id="dropdownButton" class="navlinks">
+              Blog
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          
+    
+            <div id="dropdownMenu" class="absolute hidden group-hover:block origin-top-right left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 animate-fadeInUp">
+              <div class="dropdownLinksWrapper">
+                <a href="#" class="dropdownLinks">About Us</a>
+                <a href="#" class="dropdownLinks">Our History</a>
+                          
+              </div>
+            </div>
+          </div>
+        <div class="relative group">
+            <button id="dropdownButton" class="navlinks">
+              Shop
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          
+    
+            <div id="dropdownMenu" class="absolute hidden group-hover:block origin-top-right left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 animate-fadeInUp">
+              <div class="dropdownLinksWrapper">
+                <a href="#" class="dropdownLinks">About Us</a>
+                <a href="#" class="dropdownLinks">Our History</a>
+                          
+              </div>
+            </div>
+          </div>
+        <div class="relative group">
+            <button id="dropdownButton" class="navlinks">
+              Elements
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          
+    
+            <div id="dropdownMenu" class="absolute hidden group-hover:block origin-top-right left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 animate-fadeInUp">
+              <div class="dropdownLinksWrapper">
+                <a href="#" class="dropdownLinks">About Us</a>
+                <a href="#" class="dropdownLinks">Our History</a>
+                          
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="flex items-center ml-7 justify-end flex-grow">
+     <div class="flex gap-7 items-center ">
+      <div class="custom:hidden">
+
+        <i class="fa-solid fa-phone-volume text-green "><span class="text-black text-lg font-extralight font-dm-sans ps-3.5 transition duration-300 delay-100 hover:text-green">+1 (123) 456 7890</span></i>
+      </div>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <button class="flex items-center justify-center bg-black rounded-full p-5 custom-990:hidden">
+        <i class="fa-solid fa-bars-staggered text-white"></i>
+      </button>
+      <div class=" hidden  custom-990:block">
+
+        <i class="fa-solid fa-bars-staggered text-black  "></i>
+      </div>
+    </div>
+    </div>
+    
+      </header>
+<!-- Hero Section -->
+<div class="overflow-hidden hero-slider">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div
+        class="mx-auto px-5 bg-[url('./images/banner-img1.jpg')] lg:pl-[128px] bg-cover bg-bottom bg-no-repeat relative flex flex-col justify-center lg:h-screen h-[70vh]"
+      >
+        <div class="absolute inset-0 bg-black bg-opacity-50 z-1"></div>
+        <div class="z-2 px-5  flex flex-col items-start justify-center max-w-[850px]">
+          <h2
+            class="text-4xl lg:text-[90px] text-transparent font-bold lg:leading-[100px]"
+            style="-webkit-text-stroke: 1px rgb(255, 255, 255);"
+          >
+            Digital Marketing
+          </h2>
+          <h3 class="text-4xl text-white font-bold lg:text-[90px] lg:leading-[100px]">Business Ideas.</h3>
+          <p class="text-lg text-start text-white my-4">
+            I truly believe Augustine’s words are true and if you look at
+            history you know it is true. There are many people in the world
+            dolore magna aliqua.
+          </p>
+          <button class="buttonprimary px-[50px]">Let's get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div
+        class="mx-auto px-5 bg-[url('./images/banner-img1.jpg')] bg-cover bg-bottom bg-no-repeat relative flex flex-col justify-center lg:h-screen h-[70vh]"
+      >
+        <div class="absolute inset-0 bg-black bg-opacity-50 z-1"></div>
+        <div class="z-2 px-5 flex flex-col items-start justify-center max-w-[850px]">
+          <h2
+            class="text-4xl lg:text-[90px] text-transparent font-bold lg:leading-[100px]"
+            style="-webkit-text-stroke: 1px rgb(255, 255, 255);"
+          >
+            Digital Marketing
+          </h2>
+          <h3 class="text-4xl text-white font-bold lg:text-[90px] lg:leading-[100px]">Business Ideas.</h3>
+          <p class="text-lg text-start text-white my-4">
+            I truly believe Augustine’s words are true and if you look at
+            history you know it is true. There are many people in the world
+            dolore magna aliqua.
+          </p>
+          <button class="buttonprimary px-[50px]">Let's get started</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="swiper-pagination "></div>
+  <div class="absolute  gap-4 items-center justify-center right-[8%] bottom-[15%] z-[9] lg:flex hidden">
+    <div class="hero-button-prev bg-green rounded-full w-[60px] h-[60px] text-black flex items-center justify-center"><i class="fa-solid fa-chevron-left text-3xl"></i></div>
+    <div class="hero-button-next bg-green rounded-full w-[72px] h-[72px] text-black flex items-center justify-center"><i class="fa-solid fa-chevron-right text-3xl"></i></div>
+  </div>
+ 
+</div>
+
+
+     
+<footer class="bg-black">
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center py-[70px] px-5 gap-5">
+    <h2 class="text-3xl font-semibold text-white ">Want to get any support? We're ready for you.</h2>
+<div>
+  <form class="flex" action="">
+    <input type="mail" class="w-4/5 bg-black placeholder:text-gray-600 px-[15px] focus:outline-none text-white rounded-25 border border-custom-light-gray-border" placeholder="Enter Your Email">
+    <button class="buttonprimary">Subscribe</button>
+  </form>
+</div>
+  </div>
+
+  <div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-5 py-[70px] ">
+      <div class="col-span-1 ">
+        <img src="./css/images/logo-white.svg" alt="">
+      </div>
+      <div class="col-span-1 ">
+        <h5 class="text-2xl text-white font-sora font-semibold mb-[25px]">Quick Links</h5>
+        <ul class="text-custom-gray-8 font-light flex flex-col gap-5">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Pricing Table</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 ">
+        <h5 class="text-2xl text-white font-sora font-semibold mb-[25px]">Support</h5>
+        <ul class="text-custom-gray-8 font-light flex flex-col gap-5">
+          <li><a href="">Support </a></li>
+          <li><a href="">Guide And Tutorial</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">Services Status</a></li>
+          <li><a href="">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 ">
+        <h5 class="text-2xl text-white font-sora font-semibold mb-[25px]">Contact</h5>
+        <ul class="text-custom-gray-8 font-light flex flex-col gap-5">
+          <li><a href="">info@example.com</a></li>
+          <li><a href="">+1 (123) 456 7890</a></li>
+          <li><a href="">pgs-contact-info-item pgs-contact-info-item-address</a></li>
+          <ul class="flex gap-5">
+            <li>Be.</li>
+            <li>Be.</li>
+            <li>Be.</li>
+            <li>Be.</li>
+          </ul>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="bg-black py-5 px-5 flex items-center justify-center">
+    <p class="text-custom-gray-8 font-light flex flex-col gap-5">Potenza 2024. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./app.js"></script>
+</html>

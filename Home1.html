@@ -13,7 +13,7 @@
     <title>Website</title>
 </head>
 <body class="font-dm-sans ">
-    <header class="flex items-center gap-4 px-10 custom-620:px-5"> 
+    <header class="flex items-center bg-white gap-4 px-10 custom-620:px-5 fixed top-0 left-0 w-full transform transition-transform duration-300 ease z-[1000]"> 
     <div class="py-7 min-w-56">
         <img class="" src="https://themes.potenzaglobalsolutions.com/mavix/wp-content/themes/mavix/inc/theme-data/logo.svg" alt="">
     </div>
@@ -161,28 +161,37 @@
 
       <!-- First Section -->
 
-      <div class="py-24 bg-custom-map bg-cover bg-bottom bg-no-repeat bg-opacity-50 relative flex flex-col justify-center custom-620:py-12 gap-4 px-10 custom-620:px-5 ">
+      <div class="pt-[140px] lg:pb-[140px] pb-10 bg-custom-map bg-cover bg-bottom bg-no-repeat bg-opacity-50 relative flex flex-col justify-center  gap-4 px-10 custom-620:px-5 ">
         <div class="absolute inset-0 bg-white bg-opacity-70 z-1"></div>
-        
+        <div class="absolute -rotate-90 left-[-126px] bottom-[40%] z-[10]">
+          <ul class="flex gap-4 text-black text-2xl font-medium ">
+            <li>Follow Us</li>
+            <li>Fa.</li>
+            <li>Fa.</li>
+            <li>Fa.</li>
+            <li>Fa.</li>
+            <li>Fa.</li>
+          </ul>
+        </div>
             <div class="z-2  ">
               
         <div class=" z-2 custom-620:mt-0 custom-620:mr-0 custom-620:mb-0 custom-620:ml-18p">
           <div>
-            <h2 class="text-135px custom-990:text-80 text-black font-sora font-bold leading-1.3 custom-620:text-55 ">Award Winning</h2>
+            <h2 class="text-135px custom-990:text-80 text-black font-sora font-bold leading-1.3 custom-620:text-55 " id="award-heading">Award Winning</h2>
           </div>
         </div>
         <div class=" z-2 pe-20 custom-620:pe-0">
           <div class="flex justify-end  custom-620:mr-0 custom-620:mb-0 custom-620:ml-30p">
-            <h2 class="text-135px custom-990:text-80 text-green font-sora font-bold leading-1.3 custom-620:text-55  ">Digital Agency</h2>
+            <h2 class="text-135px custom-990:text-80 text-green font-sora font-bold leading-1.3 custom-620:text-55  " id="Digital-heading">Digital Agency</h2>
           </div>
         </div>
         <div class="w-full z-2 flex flex-col gap-5  justify-end ps-480 pe-20 pt-7 custom-990:ps-20 custom-990:pe-0 custom-620:ps-16">
-          <div class="">
+          <div class="first-section-p">
             <p class="text-lg  font-light">I truly believe Augustine’s words are true and if you look at history you know it is true. There are many people in the world dolore magna aliqua.</p>
            </div>
             <div class="flex justify-between ">
-             <button class="buttonprimary ">Lets Get Started</button>
-          <div class="flex gap-5 custom-620:hidden ">
+             <button class="buttonprimary " id="first-section-button">Lets Get Started</button>
+          <div class="flex gap-5 custom-620:hidden " id="images-first-section">
             <div class="flex">
               <img src="./css/images/avatar-1.jpg" class="rounded-full w-[54px] h-[54px] border border-white " alt="">
               <img src="./css/images/avatar-1.jpg" class="rounded-full w-[54px] h-[54px] ml-negative-16 border border-white" alt="">
@@ -216,7 +225,7 @@
 
 
         <!-- third section -->
-         <div class="flex flex-col md:flex-row px-5  justify-center">
+         <div class="flex flex-col md:flex-row px-5  justify-center" id="third-section">
           <div class="flex flex-col md:flex-row px-5 py-12 w-full lg:w-9/10 border-b border-custom-gray">
             
           <div class="lg-w-1/5 flex items-center md-pe-24 ">
@@ -250,17 +259,17 @@
         
       <!-- fourt section  -->
 <div class="py-20 flex flex-col  px-5 gap-10 items-center">
-<div class="flex flex-col md:flex-row md:items-center w-full lg:max-w-1300 md:justify-between gap-5 ">
-  <div class="flex flex-col  items-start lg:max-w-1300">
-    <p class="bg-custom-light-gray py-1 px-5 rounded-40 text-black mb-5">Why Choose Us</p>
-    <h2 class="text-3xl font-semibold text-black">Our Marketing Services</h2>
+<div class="flex flex-col md:flex-row md:items-center w-full lg:max-w-1300 md:justify-between gap-5 " id="why-choose-us-small-text">
+  <div class="flex flex-col  items-start lg:max-w-1300" >
+    <p class="bg-custom-light-gray py-1 px-5 rounded-40 text-black mb-5" >Why Choose Us</p>
+    <h2 class="text-3xl font-semibold text-black" >Our Marketing Services</h2>
   </div>
   <div>
     <button class="buttonprimary">View All Services</button>
   </div>
 </div>
 
-<div class="flex flex-col w-full lg:max-w-1300 gap-12 lg:flex-row">
+<div class="flex flex-col w-full lg:max-w-1300 gap-12 lg:flex-row" id="why-choose-us-small-text">
 <div class="flex flex-col justify-end h-auto bg-custom-playvideo bg-cover bg-center rounded-25 pt-24 pb-10 px-8 gap-5 relative z-[-2]">
   <div class="absolute inset-0 bg-black bg-opacity-50 z-[-1] rounded-25"></div>
   <div class="z-2">
@@ -403,7 +412,7 @@
 
 <!-- testimonial slider -->
 
-<div class="swiper mySwiper ">
+<div class="swiper mySwiper " id="testimonial-skider">
   <div class="swiper-wrapper ">
     <div class="swiper-slide"> 
       <div class="flex flex-col items-center justify-center lg:px-36 px-5 py-10">
@@ -578,7 +587,7 @@
 
 <!-- QNA -->
 
-<div class="flex flex-col px-5 lg:py-[130px]">
+<div class="flex flex-col px-5 lg:py-[130px]" id="QNA">
   <div class=" lg:px-[45px] py-[50px] px-3 bg-custom-light-gray rounded-25"  >
     <div class="flex flex-col items-start">
       <p class="bg-black py-1 px-5 rounded-40 text-white mb-5">Our Creative Services</p>
@@ -660,8 +669,8 @@
 </div>
 
 <!-- post carousal  -->
-<div class="lg:py-[120px] py-[80px] flex flex-col  px-5 gap-10 items-center">
-  <div class="flex flex-col md:flex-row md:items-center w-full lg:max-w-1300 md:justify-between gap-5 ">
+<div class="lg:py-[120px] py-[80px] flex flex-col  px-5 gap-10 items-center" >
+  <div class="flex flex-col md:flex-row md:items-center w-full lg:max-w-1300 md:justify-between gap-5 " id="post">
     <div class="flex flex-col  items-start lg:max-w-1300">
       <p class="bg-custom-light-gray py-1 px-5 rounded-40 text-black mb-5">Recent Post</p>
       <h2 class="text-3xl font-semibold text-black font-sora">Our News And Articles</h2>
@@ -671,7 +680,7 @@
     </div>
   </div>
 
-  <div class="swiper postcarousal relative group">
+  <div class="swiper postcarousal relative group" id="post">
     <div class="swiper-wrapper ">
       <div class="swiper-slide  ">
         <div class="flex flex-col gap-5 ">
@@ -814,118 +823,8 @@
 </footer>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const dropdownMenu = document.getElementById('dropdownMenu')
-    const dropdownButton = document.getElementById('dropdownButton');
-    const parentElement = document.querySelector('.group');
-  
-    parentElement.addEventListener('mouseenter', () => {
-      dropdownMenu.classList.remove('hidden', 'animate-fadeOutDown');
-      dropdownMenu.classList.add('animate-fadeInUp');
-      dropdownButton.classList.add('text-green');
-    });
-  
-  dropdownMenu.addEventListener('mouseenter', () => {
-    dropdownButton.classList.add('text-green');
-    });
-  
-  
-    parentElement.addEventListener('mouseleave', () => {
-
-            dropdownMenu.classList.remove('animate-fadeInUp');
-            dropdownMenu.classList.add('animate-fadeOutDown');
-            dropdownButton.classList.remove('text-green');
-  
-        setTimeout(()=>{
-            dropdownMenu.classList.add('hidden');
-        },300)  
-    });
-  
-    dropdownMenu.addEventListener('mouseleave', () => {
-      dropdownMenu.classList.remove('animate-fadeInUp');
-      dropdownMenu.classList.add('animate-fadeOutDown');
-      dropdownButton.classList.remove('text-green');
-      
-      
-      setTimeout(() => {
-        dropdownMenu.classList.add('hidden');
-      }, 400); 
-    });
-
-    function updateCounter(counterElement, targetValue) {
-      let currentValue = 0;
-      const duration = 2000; 
-      const increment = Math.ceil(targetValue / (duration / 50)); 
-
-      function step() {
-        if (currentValue < targetValue) {
-          currentValue += increment;
-          counterElement.textContent = Math.min(currentValue, targetValue).toLocaleString(); 
-          setTimeout(step, 50); 
-        }
-      }
-
-      step(); 
-    }
-
-    
-    document.addEventListener('DOMContentLoaded', () => {
-      const counters = document.querySelectorAll('[id^="counter"]');
-      counters.forEach(counter => {
-        const targetValue = parseInt(counter.getAttribute('data-target'), 10);
-        updateCounter(counter, targetValue);
-      });
-    });
-
-    var swiper = new Swiper(".mySwiper", {
-      cssMode: true,
-      loop:true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
-    const accordions = document.querySelectorAll('.accordion-item');
-
-accordions.forEach(accordion => {
-    const trigger = accordion.querySelector('.accordion-trigger');
-    const content = accordion.querySelector('.accordion-content');
-    const arrow = trigger.querySelector('svg');
-
-    trigger.addEventListener('click', () => {
-        // Toggle active class to open/close accordion
-        accordion.classList.toggle('accordion-active');
-        
-        // Toggle rotation of the arrow
-        arrow.classList.toggle('rotate-180');
-    });
-});
-
-var swiper = new Swiper(".postcarousal", {
-  slidesPerView: 1, 
-  spaceBetween: 20, 
-  loop:true,
-  autoplay: {
-    delay: 3000, 
-    disableOnInteraction: false,
-  },
-
-  breakpoints: {
-    1024: {
-      slidesPerView: 3, 
-    },
-    768: {
-      slidesPerView: 2, 
-    },
-   
-  },
-      navigation: {
-        nextEl: ".post-button-next",
-        prevEl: ".post-button-prev",
-      },
-    });
-  </script>
+<script src="./app.js"></script>
 </html>
