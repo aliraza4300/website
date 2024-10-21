@@ -252,6 +252,37 @@ var swiper = new Swiper(".postcarousal", {
           ease: "power3.out",
           stagger:0.4
         });
+        gsap.to(".progress-bar", {
+          width: "80%", 
+          duration: 2, 
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: ".progress-section",
+            start: "top 80%", 
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.to(".progress-bar2", {
+          width: "90%", 
+          duration: 2, 
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: ".progress-section2",
+            start: "top 80%", 
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.to(".progress-bar3", {
+          width: "95%", 
+          duration: 2, 
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: ".progress-section3",
+            start: "top 80%", 
+            toggleActions: "play none none none",
+          },
+        });
+
       });
 
 
@@ -268,5 +299,31 @@ var swiper = new Swiper(".postcarousal", {
       nextEl: '.hero-button-next',
       prevEl: '.hero-button-prev',
     },
+  });
+
+  const tabHeadings = document.querySelectorAll('.tab-heading');
+  const tabBackground = document.getElementById('tab-bg');
+  const tabContent1 = document.getElementById('tab1-content');
+  const tabContent2 = document.getElementById('tab2-content');
+
+  
+  tabHeadings.forEach((heading) => {
+    heading.addEventListener('click', () => {
+      
+      const tab = heading.dataset.tab;
+      if (tab === 'tab1') {
+        tabBackground.style.left = '0'; 
+      } else {
+        tabBackground.style.left = '50%';
+      }
+
+      if (tab === 'tab1') {
+        tabContent1.classList.remove('hidden');
+        tabContent2.classList.add('hidden');
+      } else {
+        tabContent1.classList.add('hidden');
+        tabContent2.classList.remove('hidden');
+      }
+    });
   });
 

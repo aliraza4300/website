@@ -949,6 +949,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -975,6 +979,10 @@ video {
 
 .mr-10 {
   margin-right: 2.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-2 {
@@ -1025,6 +1033,10 @@ video {
   height: 54px;
 }
 
+.h-\[550px\] {
+  height: 550px;
+}
+
 .h-\[60px\] {
   height: 60px;
 }
@@ -1041,6 +1053,14 @@ video {
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.w-0 {
+  width: 0px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1051,6 +1071,10 @@ video {
 
 .w-170 {
   width: 170px;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-4\/5 {
@@ -1089,6 +1113,14 @@ video {
   width: 80%;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[95\%\] {
+  width: 95%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1099,6 +1131,10 @@ video {
 
 .max-w-\[850px\] {
   max-width: 850px;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-xl {
@@ -1156,8 +1192,16 @@ video {
   animation: fadeInUp 0.3s ease-out;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1326,6 +1370,10 @@ video {
   --tw-bg-opacity: 0.7;
 }
 
+.bg-\[url\(\'\.\/images\/about-img\.jpg\'\)\] {
+  background-image: url('./images/about-img.jpg');
+}
+
 .bg-\[url\(\'\.\/images\/banner-img1\.jpg\'\)\] {
   background-image: url('./images/banner-img1.jpg');
 }
@@ -1354,6 +1402,10 @@ video {
   background-repeat: no-repeat;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1362,9 +1414,18 @@ video {
   padding: 1.25rem;
 }
 
+.p-\[50px\] {
+  padding: 50px;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-3 {
@@ -1462,6 +1523,16 @@ video {
   padding-bottom: 15px;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1489,8 +1560,16 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
 .pe-20 {
   padding-inline-end: 5rem;
+}
+
+.pl-\[20px\] {
+  padding-left: 20px;
 }
 
 .ps-3\.5 {
@@ -1499,6 +1578,10 @@ video {
 
 .ps-480 {
   padding-inline-start: 480px;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .pt-24 {
@@ -1576,8 +1659,24 @@ video {
   font-size: 22px;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.text-\[33px\] {
+  font-size: 33px;
+}
+
 .text-\[35px\] {
   font-size: 35px;
+}
+
+.text-\[60px\] {
+  font-size: 60px;
 }
 
 .text-base {
@@ -1611,6 +1710,10 @@ video {
   font-weight: 500;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1629,6 +1732,10 @@ video {
 
 .leading-\[44px\] {
   line-height: 44px;
+}
+
+.leading-\[60px\] {
+  line-height: 60px;
 }
 
 .text-black {
@@ -1804,11 +1911,19 @@ video {
   .sm\:w-1\/6 {
     width: 16.666667%;
   }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1849,6 +1964,10 @@ video {
     width: 90%;
   }
 
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .lg\:w-\[60\%\] {
     width: 60%;
   }
@@ -1865,12 +1984,20 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:justify-between {
@@ -1906,8 +2033,16 @@ video {
     padding-bottom: 140px;
   }
 
+  .lg\:pb-\[80px\] {
+    padding-bottom: 80px;
+  }
+
   .lg\:pl-\[128px\] {
     padding-left: 128px;
+  }
+
+  .lg\:pt-\[130px\] {
+    padding-top: 130px;
   }
 
   .lg\:text-80 {
