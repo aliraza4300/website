@@ -12,9 +12,11 @@
 
     <title>Website</title>
 </head>
-<body class="font-dm-sans ">
+<body class="font-dm-sans overflow-x-hidden">
+  <div id="custom-cursor" class="w-10 h-10 bg-transparent border border-black rounded-full fixed top-0 left-0 pointer-events-none z-50"></div>
     <header class="flex items-center bg-white gap-4 px-10 custom-620:px-5 fixed top-0 left-0 w-full transform transition-transform duration-300 ease z-[1000]"> 
-    <div class="py-7 min-w-56">
+   
+      <div class="py-7 min-w-56">
         <img class="" src="https://themes.potenzaglobalsolutions.com/mavix/wp-content/themes/mavix/inc/theme-data/logo.svg" alt="">
     </div>
     <div class="flex flex-wrap gap-9 custom-990:hidden">
@@ -138,6 +140,102 @@
             </div>
           </div>
     </div>
+    <!-- mobile menu  -->
+    <div id="mobileMenu" class="overflow-hidden absolute flex justify-end top-0 left-0 w-full h-screen bg-[#0000004d] shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40">
+     <div class="w-[70%] h-full overflow-y-scroll bg-white flex flex-col ">
+      <div class="flex justify-between px-[40px] py-[30px] items-center">
+      <h5 class="text-[22px] text-black font-semibold">Main Menu</h5>
+      <button class="" id="closeMenu"><i class="fa-solid fa-circle-xmark text-[50px]"></i></button>  
+      </div>
+
+      <div class="px-[30px] flex flex-col gap-5">
+       <div class="accordion-item border-b border-custom-gray">
+        <div class="flex justify-between items-center" >
+          <h5 class="text-[18px] font-light text-black">Home</h5>
+          <button class="bg-custom-light-gray w-[27px] h-[27px] accordion-trigger"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class=" px-4 py-2 text-gray-600 accordion-content ">
+         <ul class="pt-[20px] flex flex-col gap-5">
+          <li>Home 01</li>
+          <li>Home 02</li>
+         </ul> 
+        </div>
+       </div>
+       <div class="accordion-item border-b border-custom-gray">
+        <div class="flex justify-between items-center" >
+          <h5 class="text-[18px] font-light text-black">Home</h5>
+          <button class="bg-custom-light-gray w-[27px] h-[27px] accordion-trigger"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class=" px-4 py-2 text-gray-600 accordion-content ">
+         <ul class="pt-[20px] flex flex-col gap-5">
+          <li>Home 01</li>
+          <li>Home 02</li>
+         </ul> 
+        </div>
+       </div>
+       <div class="accordion-item border-b border-custom-gray">
+        <div class="flex justify-between items-center" >
+          <h5 class="text-[18px] font-light text-black">Home</h5>
+          <button class="bg-custom-light-gray w-[27px] h-[27px] accordion-trigger"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class=" px-4 py-2 text-gray-600 accordion-content ">
+         <ul class="pt-[20px] flex flex-col gap-5">
+          <li>Home 01</li>
+          <li>Home 02</li>
+         </ul> 
+        </div>
+       </div>
+       <div class="accordion-item border-b border-custom-gray">
+        <div class="flex justify-between items-center" >
+          <h5 class="text-[18px] font-light text-black">Home</h5>
+          <button class="bg-custom-light-gray w-[27px] h-[27px] accordion-trigger"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class=" px-4 py-2 text-gray-600 accordion-content ">
+         <ul class="pt-[20px] flex flex-col gap-5">
+          <li>Home 01</li>
+          <li>Home 02</li>
+         </ul> 
+        </div>
+       </div>
+       <div class="accordion-item border-b border-custom-gray">
+        <div class="flex justify-between items-center" >
+          <h5 class="text-[18px] font-light text-black">Home</h5>
+          <button class="bg-custom-light-gray w-[27px] h-[27px] accordion-trigger"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class=" px-4 py-2 text-gray-600 accordion-content ">
+         <ul class="pt-[20px] flex flex-col gap-5">
+          <li>Home 01</li>
+          <li>Home 02</li>
+         </ul> 
+        </div>
+       </div>
+       <div class="accordion-item border-b border-custom-gray">
+        <div class="flex justify-between items-center" >
+          <h5 class="text-[18px] font-light text-black">Home</h5>
+          <button class="bg-custom-light-gray w-[27px] h-[27px] accordion-trigger"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class=" px-4 py-2 text-gray-600 accordion-content ">
+         <ul class="pt-[20px] flex flex-col gap-5">
+          <li>Home 01</li>
+          <li>Home 02</li>
+         </ul> 
+        </div>
+       </div>
+       <div class="accordion-item border-b border-custom-gray">
+        <div class="flex justify-between items-center" >
+          <h5 class="text-[18px] font-light text-black">Home</h5>
+          <button class="bg-custom-light-gray w-[27px] h-[27px] accordion-trigger"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class=" px-4 py-2 text-gray-600 accordion-content ">
+         <ul class="pt-[20px] flex flex-col gap-5">
+          <li>Home 01</li>
+          <li>Home 02</li>
+         </ul> 
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
     <div class="flex items-center ml-7 justify-end flex-grow">
      <div class="flex gap-7 items-center ">
       <div class="custom:hidden">
@@ -145,13 +243,50 @@
         <i class="fa-solid fa-phone-volume text-green "><span class="text-black text-lg font-extralight font-dm-sans ps-3.5 transition duration-300 delay-100 hover:text-green">+1 (123) 456 7890</span></i>
       </div>
       <i class="fa-solid fa-magnifying-glass"></i>
-      <button class="flex items-center justify-center bg-black rounded-full p-5 custom-990:hidden">
+      <button id="detailsToggle" class="flex items-center justify-center bg-black rounded-full p-5 custom-990:hidden">
         <i class="fa-solid fa-bars-staggered text-white"></i>
       </button>
-      <div class=" hidden  custom-990:block">
+      <!-- details popup -->
+      <div id="detailsPopup" class="overflow-hidden absolute flex justify-end top-0  left-0 w-full h-screen bg-[#0000004d] shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40">
+        <div class="w-[30%] h-full overflow-y-scroll bg-white flex flex-col ">
+         <div class="flex justify-end px-[40px] py-[30px] items-center">
+   
+         <button class="" id="closeDetails"><i class="fa-solid fa-circle-xmark text-[50px]"></i></button>  
+         </div>
+           <div class="px-[40px] py-[30px] flex flex-col gap-7">
 
-        <i class="fa-solid fa-bars-staggered text-black  "></i>
-      </div>
+             <img src="./css/images/logo-black-text.svg" class="w-[175px]" alt="">
+             <p>Mavix is the most enticing, creative and modern Premium WordPress Theme suitable for any business or corporate websites.</p>
+              
+             <div >
+              <h3 class="text-[22px] mb-5 text-black font-semibold">Contact Details</h3>
+              <ul class="flex flex-col gap-5">
+                <li>info@example.com</li>
+                <li>+1 (123) 456 7890</li>
+                <li>7164 Barton Terrace, North Penelope, Vermont - 97879, USA</li>
+              </ul>
+             </div>
+              
+             <div >
+              <h3 class="text-[22px] mb-[40px] text-black font-semibold">Follow Us</h3>
+              <ul class="flex  gap-5">
+                <li>Br.</li>
+                <li>Br.</li>
+                <li>Br.</li>
+                <li>Br.</li>
+                            </ul>
+             </div>
+             <button class="buttonprimary">Get In Touch</button>
+            </div>
+         
+        </div>
+       </div>
+
+
+      <button class=" hidden  custom-990:block" id="menuToggle">
+
+        <i class="fa-solid fa-bars-staggered text-black  " ></i>
+      </button>
     </div>
     </div>
     
@@ -214,7 +349,7 @@
  
 </div>
 <!-- logo section -->
-<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4" id="logo-section">
   <div class="flex items-center justify-center p-4 "><img src="./css/images/brand-01.png" alt=""></div>
   <div class="flex items-center justify-center p-4"><img src="./css/images/brand-01.png" alt=""></div>
   <div class="flex items-center justify-center p-4"><img src="./css/images/brand-01.png" alt=""></div>
@@ -225,14 +360,14 @@
 
 <!-- About Business section -->
 <div class="flex flex-col lg:flex-row gap-5 lg:flex-row lg:pt-[130px] lg:pb-[80px] py-[80px] px-5">
-<div class="lg:w-[50%] rounded-25 flex flex-col justify-end overflow-hidden bg-[url('./images/about-img.jpg')] bg-cover bg-center h-[550px] pb-[20px] pl-[20px]">
+<div id="business-image" class="lg:w-[50%] rounded-25 flex flex-col justify-end overflow-hidden bg-[url('./images/about-img.jpg')] bg-cover bg-center h-[550px] pb-[20px] pl-[20px]">
   <div class="bg-white flex gap-4 rounded-25 w-2/3 py-[20px] px-[30px]">
     <i class="fa-regular fa-thumbs-up text-green text-[33px]"></i>
     <p class="text-black">
       Integrating Marketing Tools into Your Design Effectively	</p>
   </div>
 </div>
-<div class="flex w-full lg:w-[50%]"> 
+<div class="flex w-full lg:w-[50%]" id="about-business-details"> 
   <div class="">
     <div class="flex flex-col items-start ">
       <p class="bg-custom-light-gray py-1 px-5 rounded-40 text-black mb-5">About Business</p>
@@ -247,7 +382,7 @@
         <li class="flex gap-4"><i class="fa-solid fa-circle-check text-green text-[24px]"></i><span class="font-semibold text-black">Develop a Comprehensive Marketing Strategy</span></li>
         <li class="flex gap-4"><i class="fa-solid fa-circle-check text-green text-[24px]"></i><span class="font-semibold text-black">Develop a Comprehensive Marketing Strategy</span></li>
        </ul>
-        <div class=" flex flex-col lg:flex-row gap-5">
+        <div class=" flex flex-col lg:flex-row gap-5" >
        <button class="buttonprimary " id="first-section-button">Lets Get Started</button>
           <div class="flex gap-5" id="images-first-section">
             <div class="flex">
@@ -309,20 +444,29 @@
 </div>
 </div>
      
-<div class="px-5 flex flex-col items-center justify-center">
-  <div class="flex flex-col px-2 bg-black rounded-25 z-1">
-  
-<div class="relative  max-w-md mx-auto mt-10 ">
+
+<!-- pricing plan  -->
+<div class="px-5  flex flex-col items-center justify-center">
+  <div class="flex flex-col px-5 py-[80px] bg-black rounded-25 z-1 w-full items-center justify-center">
+  <div class="lg:max-w-[1400px] flex flex-col ">
+  <div class="flex lg:flex-row flex-col items-end justify-between">
+   <div class="flex flex-col items-start justify-start lg:w-1/2" id="pricing-plan-heading">
+    <p class="bg-green py-1 px-5 rounded-40 text-black ">Pricing Plan</p>
+    <h2 class="text-3xl font-semibold text-white my-5 text-[50px] leading-[55px]">Choose the right plan for your Future</h2>
+   </div>
+    <div class="relative " id="pricing-plan-tab">
  
-  <div class="flex justify-between bg-white rounded-full">
-    <div id="tab1" class="tab-heading cursor-pointer p-2 text-center text-black z-2 w-1/2 font-semibold px-4" data-tab="tab1">Monthly</div>
-    <div id="tab2" class="tab-heading cursor-pointer p-2 text-center text-black z-2 w-1/2 font-semibold px-4" data-tab="tab2">Yearly</div>
+      <div class="flex justify-between bg-white rounded-full">
+        <div id="tab1" class="tab-heading cursor-pointer p-2 text-center text-black z-2 w-1/2 font-semibold px-4" data-tab="tab1">Monthly</div>
+        <div id="tab2" class="tab-heading cursor-pointer p-2 text-center text-black z-2 w-1/2 font-semibold px-4" data-tab="tab2">Yearly</div>
+      </div>
+      <div id="tab-bg" class="absolute z-1 top-0 left-0 bg-green h-full w-1/2 rounded-full transition-all duration-300"></div>
+    </div>
   </div>
-  <div id="tab-bg" class="absolute z-1 top-0 left-0 bg-green h-full w-1/2 rounded-full transition-all duration-300"></div>
-</div>
+
 <div id="tab-content" class="mt-4">
   <div class="tab-content" id="tab1-content">
-    <div class="flex flex-col gap-5">
+    <div class="flex flex-col gap-5 lg:flex-row">
       <!-- //first package -->
       <div class=" flex flex-col lg:flex-row">
         <div class="p-[50px] rounded-25 bg-white">
@@ -376,10 +520,10 @@
           <h2 class="text-white font-semibold text-[32px]">Basic</h2>
            <p>Purchase Our Basic Plan</p>
            <div class="flex py-[30px]">
-            <p class="font-bold">$</p>
+            <p class="font-bold text-white">$</p>
             <h2 class="text-white font-bold text-[60px] leading-[60px]">39</h2>
             <div class="flex flex-col justify-end">
-              <p>Monthly</p>
+              <p class="text-white">Monthly</p>
             </div>
            </div>
            <p class="mb-4 text-white">
@@ -396,7 +540,7 @@
     </div>
   </div>
   <div class="tab-content hidden" id="tab2-content">
-    <div class="flex flex-col gap-5">
+     <div class="flex flex-col lg:flex-row gap-5">
       <!-- //first package -->
       <div class=" flex flex-col lg:flex-row">
         <div class="p-[50px] rounded-25 bg-white">
@@ -404,9 +548,9 @@
            <p>Purchase Our Basic Plan</p>
            <div class="flex py-[30px]">
             <p class="font-bold">$</p>
-            <h2 class="text-black font-bold text-[60px] leading-[60px]">39</h2>
+            <h2 class="text-black font-bold text-[60px] leading-[60px]">40</h2>
             <div class="flex flex-col justify-end">
-              <p>Monthly</p>
+              <p>Yearly</p>
             </div>
            </div>
            <p class="mb-4">
@@ -428,9 +572,9 @@
            <p>Purchase Our Basic Plan</p>
            <div class="flex py-[30px]">
             <p class="font-bold">$</p>
-            <h2 class="text-black font-bold text-[60px] leading-[60px]">39</h2>
+            <h2 class="text-black font-bold text-[60px] leading-[60px]">40</h2>
             <div class="flex flex-col justify-end">
-              <p>Monthly</p>
+              <p>Yearly</p>
             </div>
            </div>
            <p class="mb-4">
@@ -450,10 +594,10 @@
           <h2 class="text-white font-semibold text-[32px]">Basic</h2>
            <p>Purchase Our Basic Plan</p>
            <div class="flex py-[30px]">
-            <p class="font-bold">$</p>
-            <h2 class="text-white font-bold text-[60px] leading-[60px]">39</h2>
+            <p class="font-bold text-white">$</p>
+            <h2 class="text-white font-bold text-[60px] leading-[60px]">40</h2>
             <div class="flex flex-col justify-end">
-              <p>Monthly</p>
+              <p class="text-white">Yearly</p>
             </div>
            </div>
            <p class="mb-4 text-white">
@@ -473,6 +617,331 @@
   
 </div>
 </div>
+</div>
+
+
+<!-- Our Features  -->
+<div class="flex-col px-5 py-[80px]">
+<div class="flex flex-col items-start justify-start gap-5 lg:w-1/2">
+  <p class="bg-custom-light-gray py-1 px-5 rounded-40 text-black ">Our Features</p>
+  <h2 class="text-3xl font-semibold text-black text-[50px] leading-[60px]">Drive Conversions Using Effective Marketing Features</h2>
+</div>
+<div id="features" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] px-5 lg:py-[70px] py-[30px]">
+  <div class="flex flex-col gap-5 justify-start items-start">
+    <i class="fa-solid fa-chart-bar text-black text-[26px] bg-custom-light-gray rounded-[10px] p-[15px] "></i>
+    <h5 class="text-[22px] leading-[22px] font-semibold text-black font-sora">Data Visualization</h5>
+    <p>We specialize in creating custom, responsive websites tailored to your business objectives.</p>
+  </div>
+  <div class="flex flex-col gap-5 justify-start items-start">
+    <i class="fa-solid fa-chart-bar text-black text-[26px] bg-custom-light-gray rounded-[10px] p-[15px] "></i>
+    <h5 class="text-[22px] leading-[22px] font-semibold text-black font-sora">Data Visualization</h5>
+    <p>We specialize in creating custom, responsive websites tailored to your business objectives.</p>
+  </div>
+  <div class="flex flex-col gap-5 justify-start items-start">
+    <i class="fa-solid fa-chart-bar text-black text-[26px] bg-custom-light-gray rounded-[10px] p-[15px] "></i>
+    <h5 class="text-[22px] leading-[22px] font-semibold text-black font-sora">Data Visualization</h5>
+    <p>We specialize in creating custom, responsive websites tailored to your business objectives.</p>
+  </div>
+  <div class="flex flex-col gap-5 justify-start items-start">
+    <i class="fa-solid fa-chart-bar text-black text-[26px] bg-custom-light-gray rounded-[10px] p-[15px] "></i>
+    <h5 class="text-[22px] leading-[22px] font-semibold text-black font-sora">Data Visualization</h5>
+    <p>We specialize in creating custom, responsive websites tailored to your business objectives.</p>
+  </div>
+</div>
+<div id="features" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] px-5 lg:py-[70px] py-[30px]">
+  <div class="flex flex-col gap-5 justify-start items-start">
+    <i class="fa-solid fa-chart-bar text-black text-[26px] bg-custom-light-gray rounded-[10px] p-[15px] "></i>
+    <h5 class="text-[22px] leading-[22px] font-semibold text-black font-sora">Data Visualization</h5>
+    <p>We specialize in creating custom, responsive websites tailored to your business objectives.</p>
+  </div>
+  <div class="flex flex-col gap-5 justify-start items-start">
+    <i class="fa-solid fa-chart-bar text-black text-[26px] bg-custom-light-gray rounded-[10px] p-[15px] "></i>
+    <h5 class="text-[22px] leading-[22px] font-semibold text-black font-sora">Data Visualization</h5>
+    <p>We specialize in creating custom, responsive websites tailored to your business objectives.</p>
+  </div>
+  <div class="flex flex-col gap-5 justify-start items-start">
+    <i class="fa-solid fa-chart-bar text-black text-[26px] bg-custom-light-gray rounded-[10px] p-[15px] "></i>
+    <h5 class="text-[22px] leading-[22px] font-semibold text-black font-sora">Data Visualization</h5>
+    <p>We specialize in creating custom, responsive websites tailored to your business objectives.</p>
+  </div>
+  <div class="flex flex-col gap-5 justify-start items-start">
+    <i class="fa-solid fa-chart-bar text-black text-[26px] bg-custom-light-gray rounded-[10px] p-[15px] "></i>
+    <h5 class="text-[22px] leading-[22px] font-semibold text-black font-sora">Data Visualization</h5>
+    <p>We specialize in creating custom, responsive websites tailored to your business objectives.</p>
+  </div>
+</div>
+
+
+</div>
+
+
+<!-- marquee  -->
+<div class="marquee-container bg-green rotate-[5deg] z-1 ">
+  <div class="marquee-page-2 ">
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      
+      
+      
+  </div>
+</div>
+<div class="marquee-container bg-black mb-20 z-2 relative">
+  <div class="marquee-page-2-c1">
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      <div class="lg:text-80 text-46  mr-10 font-bold  text-white">Development</div>
+      <img src="./css/images/logo-green.svg" alt="Icon" class="inline-block w-100px " />
+     
+      
+      
+      
+  </div>
+</div>
+
+
+<!-- recent post  -->
+<div class="px-5 flex flex-col gap-7 mb-[80px]" id="recent-posts">
+<div class="flex flex-col md:flex-row md:items-center w-full lg:max-w-1300 md:justify-between gap-5 " id="why-choose-us-small-text">
+  <div class="flex flex-col  items-start lg:max-w-1300" >
+    <p class="bg-custom-light-gray py-1 px-5 rounded-40 text-black mb-5" >Why Choose Us</p>
+    <h2 class="text-3xl font-semibold text-black" >Our Marketing Services</h2>
+  </div>
+  <div>
+    <button class="buttonprimary">View All Services</button>
+  </div>
+</div>
+<div class="flex flex-col lg:flex-row">
+  
+  <div class="lg:w-[40%] w-full h-auto flex justify-center items-center">
+    <img id="dynamicImage" src="./css/images/recentpost1.jpg" class="rounded-lg object-cover w-full max-w-md" alt="Dynamic Image">
+  </div>
+
+  
+  <div class="lg:w-[60%] w-full p-5">
+    <ul id="dynamicList" class="list-none">
+      <li class="mb-5 cursor-pointer flex items-center" data-image="./css/images/recentpost1.jpg">
+        <span class="text-lg font-bold text-black mr-4">01</span> 
+        <span class="text-lg font-semibold">Creativity Design Solutions</span> 
+        <span class="ml-auto text-black text-lg">➔</span>
+      </li>
+      <li class="mb-5 cursor-pointer flex items-center" data-image="./css/images/recentpost2.jpg">
+        <span class="text-lg font-bold text-black mr-4">02</span> 
+        <span class="text-lg font-semibold">Data Synchronization</span> 
+        <span class="ml-auto text-black text-lg">➔</span>
+      </li>
+      <li class="mb-5 cursor-pointer flex items-center" data-image="./css/images/recentpost1.jpg">
+        <span class="text-lg font-bold text-black mr-4">03</span> 
+        <span class="text-lg font-semibold">Logistics and Distribution</span> 
+        <span class="ml-auto text-black text-lg">➔</span>
+      </li>
+      <li class="mb-5 cursor-pointer flex items-center" data-image="./css/images/recentpost2.jpg">
+        <span class="text-lg font-bold text-black mr-4">04</span> 
+        <span class="text-lg font-semibold">Web Content Management</span> 
+        <span class="ml-auto text-black text-lg">➔</span>
+      </li>
+      <li class="mb-5 cursor-pointer flex items-center" data-image="./css/images/recentpost1.jpg">
+        <span class="text-lg font-bold text-green-500 mr-4">05</span> 
+        <span class="text-lg font-semibold text-green-500">Industrial & Manufacturing</span> 
+        <span class="ml-auto text-green-500 text-lg">➔</span>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+
+
+<!-- contact section  -->
+
+<div class="px-5 py-[80px]">
+<div class="bg-custom-light-gray rounded-25 flex flex-col lg:flex-row items-center justify-center px-5 py-7">
+<div class="flex flex-col lg:flex-row max-w-[1300px]">
+<div class="lg:w-1/2 flex flex-col gap-5" id="contact-left">
+  <div class="flex flex-col items-start justify-start gap-5 ">
+    <p class="bg-black py-1 px-5 rounded-40 text-white ">Get In Touch</p>
+    <h2 class="text-3xl font-semibold text-black text-[50px] leading-[60px]">Have questions?We are always to help you questions!</h2>
+  </div>
+  <p>
+    Get the oars in the water and start rowing. Execution is the single biggest factor in achievement, the quicker you will get to the goals!						</p>
+<div class="flex mb-[50px]">
+  <div class="flex flex-col gap-7 w-full lg:w-1/2">
+    <h5 class="text-[20px] font-semibold">Call Center</h5>
+   <ul class="gap-3">
+    <li>123 456-7890</li>
+    <li>+ (000) 123-456-7890</li>
+   </ul>
+  </div>
+  <div class="flex flex-col gap-7 w-full lg:w-1/2">
+    <h5 class="text-[20px] font-semibold">Call Center</h5>
+   <ul class="gap-3">
+    <li>123 456-7890</li>
+    <li>+ (000) 123-456-7890</li>
+   </ul>
+  </div>
+</div>
+<div class="flex mb-[50px]">
+  <div class="flex flex-col gap-7 w-full lg:w-1/2">
+    <h5 class="text-[20px] font-semibold">Call Center</h5>
+   <ul class="gap-3">
+    <li>123 456-7890</li>
+    <li>+ (000) 123-456-7890</li>
+   </ul>
+  </div>
+  <div class="flex flex-col gap-7 w-full lg:w-1/2">
+    <h5 class="text-[20px] font-semibold">Call Center</h5>
+   <ul class="gap-3">
+    <li>123 456-7890</li>
+    <li>+ (000) 123-456-7890</li>
+   </ul>
+  </div>
+</div>
+
+  </div>
+
+<div class="lg:w-1/2 bg-white rounded-25 p-[80px] flex flex-col gap-5" id="contact-right">
+  <h5 class="text-[26px] font-semibold text-black">Get In Touch</h5>
+  <p>
+    Please fill out the form below with your details and message, and our team will get back to you as soon as possible. 						</p>
+<form action="submit" class="flex flex-col items-start gap-5">
+  <input type="text" name="" id="" placeholder="Name*" class="w-full border border-custom-gray rounded-[8px] py-[15px] px-[20px] bg-white">
+  <input type="text" name="" id="" placeholder="Email*" class="w-full border border-custom-gray rounded-[8px] py-[15px] px-[20px] bg-white">
+  <input type="text" name="" id="" placeholder="Subject*" class="w-full border border-custom-gray rounded-[8px] py-[15px] px-[20px] bg-white">
+  <input type="text" name="" id="" placeholder="Message*" class="w-full border border-custom-gray rounded-[8px] py-[15px] px-[20px] bg-white">
+<button class="buttonprimary">Send Message</button>
+</form>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- post carousal  -->
+<div class="lg:py-[120px] py-[80px] flex flex-col  px-5 gap-10 items-center" >
+  <div class="flex flex-col md:flex-row md:items-center w-full lg:max-w-1300 md:justify-between gap-5 " id="post">
+    <div class="flex flex-col  items-start lg:max-w-1300">
+      <p class="bg-custom-light-gray py-1 px-5 rounded-40 text-black mb-5">Recent Post</p>
+      <h2 class="text-3xl font-semibold text-black font-sora">Our News And Articles</h2>
+    </div>
+    <div>
+      <button class="buttonprimary">View All Articles</button>
+    </div>
+  </div>
+
+  <div class="swiper postcarousal relative group" id="post">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide  ">
+        <div class="flex flex-col gap-5 ">
+        <div class="relative rounded-25 overflow-hidden">
+          <img src="./css/images/blog-img2-1000x650.jpg" class="" alt="">
+          <p class="bg-green py-1 px-5 rounded-40 text-black mb-5 absolute  top-[5%] right-[5%]">Recent Post</p>
+        </div>
+        <div class="flex flex-col items-start">
+        <h5 class="text-2xl font-sora text-black font-semibold text-start"><a href="">2024 Top SEO Features for Marketing Designs</a></h5>
+        <p class="text-gray-600">Jul 13 , 2024</p>
+    </div>  
+    </div>
+    </div>
+      <div class="swiper-slide ">
+        <div class="flex flex-col gap-5 ">
+        <div class="relative rounded-25 overflow-hidden">
+          <img src="./css/images/blog-img2-1000x650.jpg" class="" alt="">
+          <p class="bg-green py-1 px-5 rounded-40 text-black mb-5 absolute  top-[5%] right-[5%]">Recent Post</p>
+        </div>
+        <div class="flex flex-col items-start">
+        <h5 class="text-2xl font-sora text-black font-semibold text-start"><a href="">2024 Top SEO Features for Marketing Designs</a></h5>
+        <p class="text-gray-600">Jul 13 , 2024</p>
+    </div>  
+    </div>
+    </div>
+      <div class="swiper-slide ">
+        <div class="flex flex-col gap-5 ">
+        <div class="relative rounded-25 overflow-hidden">
+          <img src="./css/images/blog-img2-1000x650.jpg" class="" alt="">
+          <p class="bg-green py-1 px-5 rounded-40 text-black mb-5 absolute  top-[5%] right-[5%]">Recent Post</p>
+        </div>
+        <div class="flex flex-col items-start">
+        <h5 class="text-2xl font-sora text-black font-semibold text-start"><a href="">2024 Top SEO Features for Marketing Designs</a></h5>
+        <p class="text-gray-600">Jul 13 , 2024</p>
+    </div>  
+    </div>
+    </div>
+      <div class="swiper-slide ">
+        <div class="flex flex-col gap-5 ">
+        <div class="relative rounded-25 overflow-hidden">
+          <img src="./css/images/blog-img2-1000x650.jpg" class="" alt="">
+          <p class="bg-green py-1 px-5 rounded-40 text-black mb-5 absolute  top-[5%] right-[5%]">Recent Post</p>
+        </div>
+        <div class="flex flex-col items-start">
+        <h5 class="text-2xl font-sora text-black font-semibold text-start"><a href="">2024 Top SEO Features for Marketing Designs</a></h5>
+        <p class="text-gray-600">Jul 13 , 2024</p>
+    </div>  
+    </div>
+    </div>
+      <div class="swiper-slide ">
+        <div class="flex flex-col gap-5 ">
+        <div class="relative rounded-25 overflow-hidden">
+          <img src="./css/images/blog-img2-1000x650.jpg" class="" alt="">
+          <p class="bg-green py-1 px-5 rounded-40 text-black mb-5 absolute  top-[5%] right-[5%]">Recent Post</p>
+        </div>
+        <div class="flex flex-col items-start">
+        <h5 class="text-2xl font-sora text-black font-semibold text-start"><a href="">2024 Top SEO Features for Marketing Designs</a></h5>
+        <p class="text-gray-600">Jul 13 , 2024</p>
+    </div>  
+    </div>
+    </div>
+      <div class="swiper-slide ">
+        <div class="flex flex-col gap-5 ">
+        <div class="relative rounded-25 overflow-hidden">
+          <img src="./css/images/blog-img2-1000x650.jpg" class="" alt="">
+          <p class="bg-green py-1 px-5 rounded-40 text-black mb-5 absolute  top-[5%] right-[5%]">Recent Post</p>
+        </div>
+        <div class="flex flex-col items-start">
+        <h5 class="text-2xl font-sora text-black font-semibold text-start"><a href="">2024 Top SEO Features for Marketing Designs</a></h5>
+        <p class="text-gray-600">Jul 13 , 2024</p>
+    </div>  
+    </div>
+    </div>
+      
+    </div>
+    <div class="post-button-next absolute right-[10px] top-[50%] z-[9] bg-green rounded-full w-[60px] h-[60px] text-white flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 " ><i class="fa-solid fa-chevron-right"></i></div>
+    <div class="post-button-prev absolute left-[10px] top-[50%] z-[9] bg-green rounded-full w-[60px] h-[60px] text-white flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 "><i class="fa-solid fa-chevron-left"></i></div>
+  </div>
+
+
+</div>
+
+
 <footer class="bg-black">
   <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center py-[70px] px-5 gap-5">
     <h2 class="text-3xl font-semibold text-white ">Want to get any support? We're ready for you.</h2>

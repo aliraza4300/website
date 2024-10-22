@@ -21,7 +21,7 @@
      .buttonprimary-small{
         @apply py-2 px-5  bg-green rounded-40 hover:bg-black hover:text-white
      }
-
+   
      .carousel-container {
         scroll-snap-type: x mandatory;
         overflow-x: scroll;
@@ -40,7 +40,19 @@
         0% { transform: translateX(0); }
         100% { transform: translateX(calc(-140% - 180px)); }
     }
-
+      @keyframes marqueepage2 {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(140% - 180px)); }
+    }
+    .marquee-page-2{
+      display: flex;
+      justify-content: end;
+      animation: marqueepage2 15s linear infinite;
+    }
+    .marquee-page-2-c1{
+      display: flex;
+        animation: marquee 15s linear infinite;
+    }
     .marquee {
         display: flex;
         animation: marquee 4s linear infinite;
@@ -62,6 +74,8 @@
     .text-stroke:hover{
         color: black;
     }
+
+
     @keyframes progress-animation {
         0% { width: 0%; }
         100% { width: var(--progress-width); }
@@ -141,4 +155,10 @@
       transform: translateY(-50%) !important;
       width: auto !important;
     }
+    .no-scroll {
+      overflow: hidden;
+      height: 100vh;
+    }
+  
+    
 }
